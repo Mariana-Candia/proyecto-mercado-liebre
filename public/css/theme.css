@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb;
+}
+.banner {
+    width: 100%;
+}
+
+/*HEADER CON 
+LOGO, SEARCH-BAR, 
+COMPRA EN CUOTAS,
+-BURGER-MENU 
+-o-
+-NAV-BAR(Ofertas, Tiendas Oficiales / Vender /Ayuda) y LOGIN-BAR (Crea tu cuenta / Ingresa/ Mis compras) */
+
+header {
+    background-color: #EAC926;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    border: red 2px solid;
+}
+
+.logo{
+    width: 50vw;
+    border: solid blue 2px;
+
+}
+.search-bar{
+    width: 50vw;
+    margin: auto;
+    border: purple solid 2px;
+}
+.compra-en-ctas{
+    margin: auto;
+    border: solid green 2px;
+} 
+nav{
+    display: none;
+}
+header li {
+    list-style: none;
+    color: black;
+}
+
+.burger-menu{
+    text-align: center;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 15%;
+    line-height: 2em;
+    background-color: #1259c3;
+    margin: auto;
+}
+
+
+main {
+    width: 90vw;
+    margin: auto;
+    color: #666;
+}
+main h2{
+    font-size: 24px;
+}
+article{
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+article img {
+    width: 100%;
+}
+.product-box{
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+.price{
+    width: 30%;
+    font-size: 18px;
+}
+.discount {
+    width: 70%;
+    color: #39b54a;
+    font-size: 16px ;
+}
+
+
+footer{
+    background-color: white;
+    color: #666;
+    text-align: center;
+}
+footer section{
+    padding: 10px;
+}
+footer h4{
+    font-size: 16px;
+}
+footer i{
+    font-size: 2em;
+    line-height: 10px;
+    color:#1259c3;
+}
+.copyright{
+    text-align: left ;
+}

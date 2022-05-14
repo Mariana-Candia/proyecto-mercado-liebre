@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    background-color:white;
+}
+header {
+    background-color: #EAC926;
+}
+/*.top-header{
+    display: flex;
+}*/
+header nav {
+    display: flex;
+    width: 50%;
+}
+.logo-mercado-liebre{
+    width: 50%;
+}
+.search-bar{
+    width: 50%;
+}
+header h4 {
+    text-align: center;
+}
+header li {
+    list-style: none;
+    color: black;
+}
+nav{
+    display: none;
+}
+.burger-menu{
+    text-align: center;
+    color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 15%;
+    line-height: 2em;
+    background-color: #1259c3;
+    margin: auto
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+    color: #666;
+    background-color:  #ebebeb;
+    padding: 10px;
+}
+main input{
+    width: 100%;
+}
+main button {
+    color: white;
+    background-color: #1259c3;
+    width: 100%;
+    border-radius: 8 px;
+    border: 1px solid #1259c3;
+    margin: 5 auto;
+}
+
+footer{
+    background-color: white;
+    color: #666;
+    text-align: center;
+}
+footer section{
+    padding: 10px;
+}
+footer h4{
+    font-size: 16px;
+}
+footer i{
+    font-size: 2em;
+    line-height: 10px;
+    color:#1259c3;
+}
+.copyright{
+    text-align: left ;
+}
