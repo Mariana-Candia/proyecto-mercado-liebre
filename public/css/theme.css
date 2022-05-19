@@ -9,6 +9,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     background-color: #ebebeb;
+    margin-top: 124.4px;
 }
 .banner {
     width: 100%;
@@ -23,27 +24,33 @@ COMPRA EN CUOTAS,
 
 header {
     background-color: #EAC926;
+    position: fixed;
+    top: 0 ;
+    width: 100%;
+    z-index: 10;
 }
 
 .top-header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    border: red 2px solid;
 }
 
 .logo{
-    width: 50vw;
-    border: solid blue 2px;
-
+    width: 50%;
+    margin: 2px auto ;
 }
 .search-bar{
-    width: 50vw;
+    width: 50%;
     margin: auto;
-    border: purple solid 2px;
+    text-align: center;
+    display: flex;
+
 }
+
 .compra-en-ctas{
-    margin: auto;
-    border: solid green 2px;
+    font-size: 16px;
+    margin:  auto;
 } 
 nav{
     display: none;
@@ -51,6 +58,8 @@ nav{
 header li {
     list-style: none;
     color: black;
+    margin: 4px;
+    text-align: center;
 }
 
 .burger-menu{
@@ -61,7 +70,7 @@ header li {
     border-radius: 15%;
     line-height: 2em;
     background-color: #1259c3;
-    margin: auto;
+    margin: 5px auto;
 }
 
 
@@ -72,12 +81,18 @@ main {
 }
 main h2{
     font-size: 24px;
+    display: block;
+    width: 100%;
 }
-article{
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
     margin: 10px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100); 
 }
-article img {
+.product img {
     width: 100%;
 }
 .product-box{
@@ -87,7 +102,9 @@ article img {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
+
 main section article i{
     display: block;
     font-size: 16px;
@@ -101,6 +118,10 @@ main section article i{
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: all 1s;
+}
+main section article i:hover{
+    transform: rotate(270deg);
 }
 .price{
     width: 30%;
@@ -117,18 +138,34 @@ footer{
     background-color: white;
     color: #666;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
 }
 footer section{
     padding: 10px;
+    font-size: 14px;
 }
-footer h4{
-    font-size: 16px;
-}
-footer i{
+
+.footer-icon{
     font-size: 2em;
-    line-height: 10px;
+    margin-bottom: 10px;
     color:#1259c3;
+    margin: auto;
+    padding: 8px;
+    transition: all 1s;
+}
+.footer-icon:hover{
+    background-color: #1259c3;
+    border-radius: 25%;
+    color: white;
+}
+
+footer p{
+    margin: 8px;
 }
 .copyright{
     text-align: left ;
+    font-size: 14px;
 }

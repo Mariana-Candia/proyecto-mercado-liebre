@@ -1,0 +1,52 @@
+body{
+    background-color: #ebebeb;
+}
+form{
+    width: 70vw;
+}
+input{
+    margin: 6px; 
+    border: none;
+    width: 100%;
+    padding: 4px 20px;
+    border-radius: 5px;  
+}
+main  button {
+    margin: 8px;
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 4px 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+span{
+    color: red;
+    margin: 4px 6px;
+}
+.send{
+    transition: all 0.5s;
+}
+.send:hover{
+    background-color: #0022AA;
+}
+
+@media (min-width: 576px) {
+    .formulario {
+        margin-top: 90px;
+    }
+    form{
+        width: 60vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .formulario{
+        margin-top: 140px;
+    }
+    form{
+        width: 40vw;
+    }
+}
