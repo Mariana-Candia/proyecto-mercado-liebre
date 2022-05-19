@@ -9,18 +9,8 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     background-color: #ebebeb;
-    margin-top: 124.4px;
+    margin-top: 108px;
 }
-.banner {
-    width: 100%;
-}
-
-/*HEADER CON 
-LOGO, SEARCH-BAR, 
-COMPRA EN CUOTAS,
--BURGER-MENU 
--o-
--NAV-BAR(Ofertas, Tiendas Oficiales / Vender /Ayuda) y LOGIN-BAR (Crea tu cuenta / Ingresa/ Mis compras) */
 
 header {
     background-color: #EAC926;
@@ -30,12 +20,12 @@ header {
     z-index: 10;
 }
 
+/*TOP HEADER INCLUYE LOGO + SEARCH BAR + COMPRA EN CTAS*/
 .top-header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .logo{
     width: 50%;
     margin: 2px auto ;
@@ -45,13 +35,15 @@ header {
     margin: auto;
     text-align: center;
     display: flex;
-
+    position: relative;
 }
-
 .compra-en-ctas{
     font-size: 16px;
     margin:  auto;
+    max-width: max-content;
 } 
+
+/*NAV INCLUYE BARRA DE NAVEGACION DEL SITIO O NAV-BAR Y LOGIN-BAR*/
 nav{
     display: none;
 }
@@ -60,6 +52,13 @@ header li {
     color: black;
     margin: 4px;
     text-align: center;
+}
+header input {
+    border: none;
+    padding: 4px 20px;
+    border-radius: 5px;
+    width: 80%;
+    position: absolute;
 }
 
 .burger-menu{
@@ -73,12 +72,18 @@ header li {
     margin: 5px auto;
 }
 
+.banner {
+    width: 100%;
+}
+
 
 main {
     width: 90vw;
     margin: auto;
     color: #666;
 }
+
+/*TITULOS DE LAS DOS SECCIONES*/
 main h2{
     font-size: 24px;
     display: block;
@@ -88,6 +93,8 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
+
+/*PRODUCT INCLUYE IMAGEN, PRECIO, DESCUENTO, DESCRIPCION DEL PRODUCTO E ICONO CAMION*/
 .product{
     margin: 10px;
     box-shadow: 0px 0px 10px rgb(100, 100, 100); 
@@ -95,6 +102,7 @@ section{
 .product img {
     width: 100%;
 }
+/*PRODUCT-BOX INCLUYE PRECIO, DESCUENTO, DESCRIPCION DEL PRODUCTO E ICONO CAMION**/
 .product-box{
     border-top: 1px solid #ebebeb;
     background-color: white;
@@ -105,6 +113,7 @@ section{
     align-items: center;
 }
 
+/*ICONO CAMION*/
 main section article i{
     display: block;
     font-size: 16px;
@@ -123,14 +132,17 @@ main section article i{
 main section article i:hover{
     transform: rotate(270deg);
 }
+
 .price{
     width: 30%;
     font-size: 18px;
+    flex-grow: 0.3;
 }
 .discount {
     width: 70%;
     color: #39b54a;
     font-size: 16px ;
+    flex-grow: 0.7;
 }
 
 
@@ -143,6 +155,8 @@ footer{
     align-items: center;
     margin: 0px;
 }
+
+/*CADA UNA DE LAS SECCIONES DEL FOOTER */
 footer section{
     padding: 10px;
     font-size: 14px;
@@ -161,7 +175,6 @@ footer section{
     border-radius: 25%;
     color: white;
 }
-
 footer p{
     margin: 8px;
 }
